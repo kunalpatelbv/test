@@ -15,7 +15,6 @@ namespace KPTestsGit
             tasks.ForEach( t => t.Start() );
             Task.WaitAll( tasks.ToArray() );
             tasks.ForEach( t => Console.WriteLine( t.Result ) );
-            Console.WriteLine("Hello");
         }
     }
 }
